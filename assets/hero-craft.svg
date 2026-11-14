@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <rect width="600" height="350" fill="#F4EFEB"/>
+  <!-- Decorative background studio geometry -->
+  <circle cx="480" cy="80" r="120" fill="#A0D4E0" opacity="0.25"/>
+  <rect x="40" y="240" width="520" height="70" rx="4" fill="#E2DDD5"/>
+  <!-- Potter wheel & vase -->
+  <ellipse cx="200" cy="230" rx="80" ry="18" fill="#A5856F"/>
+  <ellipse cx="200" cy="225" rx="72" ry="14" fill="#8A6B56"/>
+  <!-- Clay vessel on wheel -->
+  <path d="M 160 220 C 150 170, 140 140, 180 110 C 190 100, 210 100, 220 110 C 260 140, 250 170, 240 220 Z" fill="#D98A5B"/>
+  <ellipse cx="200" cy="110" rx="20" ry="6" fill="#BF7143"/>
+  <ellipse cx="200" cy="108" rx="14" ry="4" fill="#8A4A24"/>
+  <!-- Artisan hands gesture -->
+  <path d="M 120 160 C 145 155, 160 175, 165 190" stroke="#A5856F" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <path d="M 280 160 C 255 155, 240 175, 235 190" stroke="#A5856F" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <!-- Tools on workbench -->
+  <rect x="360" y="232" width="90" height="8" rx="2" fill="#2B2825"/>
+  <polygon points="450,230 470,236 450,242" fill="#A0D4E0"/>
+  <rect x="380" y="222" width="6" height="18" fill="#8A6B56"/>
+  <!-- Atmospheric text tag -->
+  <rect x="420" y="40" width="140" height="28" rx="14" fill="#FFFFFF" stroke="#A5856F" stroke-width="1.5"/>
+  <text x="490" y="58" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" font-weight="bold" fill="#2B2825">STUDIO MASTERCLASS</text>
+</svg>

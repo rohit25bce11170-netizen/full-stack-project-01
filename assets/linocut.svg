@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="100%" height="100%">
+  <rect width="400" height="225" fill="#EBF7FA"/>
+  <!-- Linoleum carving block -->
+  <rect x="70" y="45" width="160" height="135" rx="4" fill="#FFFFFF" stroke="#2B2825" stroke-width="2"/>
+  <!-- Botanical leaf carved pattern -->
+  <path d="M 150 60 Q 110 100 150 160 Q 190 100 150 60 Z" fill="#1F5A67"/>
+  <path d="M 150 70 L 150 150" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M 150 95 L 130 85 M 150 115 L 170 105 M 150 135 L 135 125" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Ink brayer roller -->
+  <rect x="250" y="70" width="85" height="25" rx="4" fill="#2B2825"/>
+  <rect x="285" y="95" width="15" height="70" rx="3" fill="#A5856F"/>
+  <path d="M 270 70 L 270 95 M 315 70 L 315 95" stroke="#68625C" stroke-width="3"/>
+  <!-- Relief ink swirls -->
+  <circle cx="340" cy="170" r="15" fill="#A0D4E0" opacity="0.6"/>
+</svg>

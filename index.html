@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ArtisanCraft Studio Hub – Master hands-on tactile craftsmanship in ceramics, woodworking, linocut printmaking, and leather crafting through small-group studio masterclasses.">
+  <meta name="keywords" content="artisan workshops, pottery masterclass, woodworking classes, printmaking, leathercraft, hands-on craft">
+  <meta name="author" content="DecodeLabs Full Stack Internship Program">
+  <meta name="theme-color" content="#A5856F">
+
+  <!-- Open Graph / Meta for Social & SEO -->
+  <meta property="og:title" content="ArtisanCraft Studio Hub | Tangible Craft Masterclasses">
+  <meta property="og:description" content="Cultivate analog craft mastery in a digital age. Filter, explore, and reserve small-group studio workshops.">
+  <meta property="og:type" content="website">
+
+  <title>ArtisanCraft Studio Hub | Master Tangible Craftsmanship</title>
+
+  <!-- SVG Favicon to eliminate 404 console error -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%2373533E'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='%23FFFFFF'>✦</text></svg>">
+
+  <!-- Preload LCP Hero Image -->
+  <link rel="preload" href="assets/images/hero-craft.svg" as="image" type="image/svg+xml">
+
+  <!-- Typography: Inter (Headlines) & Roboto (Body) with strict weight limits -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip to Content Landmark -->
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- =========================================================================
+       HEADER & NAVIGATION LANDMARK (Semantic Wayfinding)
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="brand-logo" aria-label="ArtisanCraft Studio Home">
+        <span class="logo-mark" aria-hidden="true">✦</span>
+        <span class="logo-text">Artisan<strong>Craft</strong></span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" 
+              class="nav-toggle" 
+              id="nav-toggle-btn" 
+              aria-controls="primary-nav" 
+              aria-expanded="false" 
+              aria-label="Toggle primary navigation menu">
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+        <span class="hamburger-bar" aria-hidden="true"></span>
+      </button>
+
+      <!-- Primary Accessible Navigation -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#catalog-section" class="nav-link active" aria-current="page">Workshops</a></li>
+          <li class="nav-item"><a href="#filter-sidebar" class="nav-link">Craft Disciplines</a></li>
+          <li class="nav-item"><a href="#reservation-section" class="nav-link">Studio Reservations</a></li>
+          <li class="nav-item"><a href="#community-section" class="nav-link">About Studios</a></li>
+          <li class="nav-item"><a href="#site-footer" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#reservation-section" class="btn btn-primary btn-sm">Reserve Spot</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT LANDMARK (Core Application Narrative)
+       ========================================================================= -->
+  <main id="main-content" tabindex="-1">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">Curated Studio Masterclasses • Batch 2026</span>
+          <h1 id="hero-title" class="hero-title">Master Tangible Craftsmanship in a Digital Age</h1>
+          <p class="hero-subtitle">
+            Disconnect from screens and immerse yourself in small-group, tactile craft workshops. Led by master artisans in wheel-thrown ceramics, Japanese joinery, botanical relief printmaking, and fine leathercraft.
+          </p>
+
+          <!-- Interactive Search & Filter Bar -->
+          <form class="hero-search-form" id="hero-search-form" role="search" aria-label="Quick Workshop Search">
+            <div class="search-input-wrapper">
+              <label for="hero-search-input" class="visually-hidden">Search workshops by craft or keyword</label>
+              <input type="search" 
+                     id="hero-search-input" 
+                     name="search" 
+                     placeholder="Search pottery, joinery, linocut, leather..." 
+                     autocomplete="off">
+              <button type="submit" class="btn btn-search" aria-label="Execute search">
+                <span aria-hidden="true">🔍</span> Search
+              </button>
+            </div>
+          </form>
+
+          <!-- Quick Category Filter Chips -->
+          <div class="category-chips-wrapper" aria-label="Quick Craft Filters">
+            <span class="chips-label">Quick Select:</span>
+            <div class="category-chips" role="group">
+              <button type="button" class="chip active" data-filter="all" aria-pressed="true">All Disciplines</button>
+              <button type="button" class="chip" data-filter="pottery" aria-pressed="false">Ceramics</button>
+              <button type="button" class="chip" data-filter="woodcraft" aria-pressed="false">Woodcraft</button>
+              <button type="button" class="chip" data-filter="printmaking" aria-pressed="false">Printmaking</button>
+              <button type="button" class="chip" data-filter="leather" aria-pressed="false">Leather</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <img src="assets/images/hero-craft.svg" 
+               alt="Artisan ceramicist shaping clay pottery on a spinning kick-wheel" 
+               class="hero-illustration" 
+               width="600" 
+               height="350" 
+               loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- Macro Layout Container (2D CSS Grid floorplan) -->
+    <div class="app-layout-container">
+      
+      <!-- =====================================================================
+           ASIDE LANDMARK: Refinement & Filter Panel
+           ===================================================================== -->
+      <aside class="filter-sidebar" id="filter-sidebar" aria-labelledby="filter-heading">
+        <div class="sidebar-sticky-wrapper">
+          <div class="sidebar-header">
+            <h2 id="filter-heading" class="sidebar-title">Filters &amp; Refinements</h2>
+            <button type="button" id="btn-reset-filters" class="btn-text-link" aria-label="Reset all active filters">Reset</button>
+          </div>
+
+          <form id="catalog-filter-form" class="filter-form">
+            <!-- Filter Group: Discipline -->
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Craft Discipline</legend>
+              <ul class="filter-options-list">
+                <li>
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="discipline" value="pottery" class="filter-checkbox" checked>
+                    <span class="checkbox-custom" aria-hidden="true"></span>
+                    <span class="label-text">Ceramics &amp; Pottery</span>
+                    <span class="item-count">(2)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="discipline" value="woodcraft" class="filter-checkbox" checked>
+                    <span class="checkbox-custom" aria-hidden="true"></span>
+                    <span class="label-text">Woodcraft &amp; Joinery</span>
+                    <span class="item-count">(1)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="discipline" value="printmaking" class="filter-checkbox" checked>
+                    <span class="checkbox-custom" aria-hidden="true"></span>
+                    <span class="label-text">Linocut &amp; Relief Print</span>
+                    <span class="item-count">(1)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="discipline" value="leather" class="filter-checkbox" checked>
+                    <span class="checkbox-custom" aria-hidden="true"></span>
+                    <span class="label-text">Handmade Leather Goods</span>
+                    <span class="item-count">(1)</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox-label">
+                    <input type="checkbox" name="discipline" value="glass" class="filter-checkbox" checked>
+                    <span class="checkbox-custom" aria-hidden="true"></span>
+                    <span class="label-text">Glassblowing &amp; Kiln</span>
+                    <span class="item-count">(1)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Filter Group: Skill Level -->
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Skill Level</legend>
+              <ul class="filter-options-list">
+                <li>
+                  <label class="custom-radio-label">
+                    <input type="radio" name="level" value="all" class="filter-radio" checked>
+                    <span class="radio-custom" aria-hidden="true"></span>
+                    <span class="label-text">All Experience Levels</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio-label">
+                    <input type="radio" name="level" value="Beginner" class="filter-radio">
+                    <span class="radio-custom" aria-hidden="true"></span>
+                    <span class="label-text">Beginner Friendly</span>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-radio-label">
+                    <input type="radio" name="level" value="Intermediate" class="filter-radio">
+                    <span class="radio-custom" aria-hidden="true"></span>
+                    <span class="label-text">Intermediate / Advanced</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Filter Group: Max Price Range -->
+            <fieldset class="filter-group">
+              <legend class="filter-group-title">Maximum Price</legend>
+              <div class="range-slider-wrapper">
+                <div class="range-labels">
+                  <span>$50</span>
+                  <span id="price-output" class="price-val" aria-live="polite">Up to $150</span>
+                </div>
+                <label for="price-range-input" class="visually-hidden">Filter maximum workshop fee</label>
+                <input type="range" 
+                       id="price-range-input" 
+                       name="maxPrice" 
+                       min="50" 
+                       max="150" 
+                       step="5" 
+                       value="150" 
+                       class="range-slider">
+              </div>
+            </fieldset>
+
+            <button type="button" id="btn-apply-mobile-filters" class="btn btn-secondary btn-block mobile-only">
+              Apply Filters
+            </button>
+          </form>
+        </div>
+      </aside>
+
+      <!-- =====================================================================
+           SECTION LANDMARK: Main Workshop Catalog
+           ===================================================================== -->
+      <section class="catalog-section" id="catalog-section" aria-labelledby="catalog-heading">
+        <!-- Catalog Controls Toolbar -->
+        <div class="catalog-toolbar">
+          <div>
+            <h2 id="catalog-heading" class="catalog-title">Available Studio Workshops</h2>
+            <p class="results-count" id="results-count" aria-live="polite">Showing 6 curated masterclasses</p>
+          </div>
+
+          <div class="catalog-sort">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <select id="sort-select" class="sort-dropdown" aria-label="Sort workshops list">
+              <option value="featured">Featured Masterclasses</option>
+              <option value="price-asc">Fee: Low to High</option>
+              <option value="price-desc">Fee: High to Low</option>
+              <option value="duration">Duration (Shortest first)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Card Grid (CSS Grid) -->
+        <div class="workshop-grid" id="workshop-grid" role="region" aria-label="Workshops catalog list">
+          
+          <!-- Workshop Card 1: Pottery Intensive -->
+          <article class="workshop-card" 
+                   data-discipline="pottery" 
+                   data-level="Beginner" 
+                   data-price="85" 
+                   data-duration="3.5"
+                   id="card-pottery-wheel">
+            <figure class="card-media">
+              <img src="assets/images/pottery.svg" 
+                   alt="Ceramicist throwing a clay vase on an electric pottery wheel" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-pottery">Ceramics</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Ceramic Wheel Throwing to favorites" 
+                      aria-pressed="false"
+                      data-id="pottery-wheel">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Beginner Friendly</span>
+                <span class="card-spots"><strong class="spot-num">4</strong> spots left</span>
+              </div>
+
+              <h3 class="card-title">Ceramic Wheel Throwing Intensive</h3>
+              <p class="card-desc">
+                Learn centering, opening, pulling, and trimming stoneware clay on electric wheels. Includes bisque firing, custom glazes, and 3 completed vessels to keep.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 3.5 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">🏺</span> Stoneware Clay &amp; Glaze Provided</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Downtown Studio Loft</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$85</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Ceramic Wheel Throwing Intensive"
+                        data-workshop-price="85">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workshop Card 2: Japanese Joinery -->
+          <article class="workshop-card" 
+                   data-discipline="woodcraft" 
+                   data-level="Intermediate" 
+                   data-price="110" 
+                   data-duration="4.0"
+                   id="card-japanese-joinery">
+            <figure class="card-media">
+              <img src="assets/images/woodworking.svg" 
+                   alt="Interlocking Japanese mortise and tenon wooden joint assembly" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-woodcraft">Woodcraft</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Traditional Japanese Joinery to favorites" 
+                      aria-pressed="false"
+                      data-id="japanese-joinery">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Intermediate</span>
+                <span class="card-spots"><strong class="spot-num">2</strong> spots left</span>
+              </div>
+
+              <h3 class="card-title">Traditional Japanese Wood Joinery</h3>
+              <p class="card-desc">
+                Master complex interlocking joints without screws or glue using Japanese hand pull-saws (Ryoba) and precision chisels on sustainably harvested white oak.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 4.0 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">🪵</span> White Oak Timber Kit Included</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Timber Mill Workshop B</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$110</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Traditional Japanese Wood Joinery"
+                        data-workshop-price="110">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workshop Card 3: Botanical Linocut -->
+          <article class="workshop-card" 
+                   data-discipline="printmaking" 
+                   data-level="Beginner" 
+                   data-price="70" 
+                   data-duration="3.0"
+                   id="card-botanical-linocut">
+            <figure class="card-media">
+              <img src="assets/images/linocut.svg" 
+                   alt="Hand-carved linoleum relief printing block with ink brayer roller" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-printmaking">Printmaking</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Botanical Linocut Printmaking to favorites" 
+                      aria-pressed="false"
+                      data-id="botanical-linocut">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Beginner Friendly</span>
+                <span class="card-spots"><strong class="spot-num">6</strong> spots left</span>
+              </div>
+
+              <h3 class="card-title">Botanical Linocut Relief Printing</h3>
+              <p class="card-desc">
+                Carve botanical floral motifs into soft linoleum blocks using V-gouges. Pull editioned archival prints on 100% cotton handmade paper with oil-based relief inks.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 3.0 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">🌿</span> 5 Archival Cotton Prints</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Print Press Studio</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$70</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Botanical Linocut Relief Printing"
+                        data-workshop-price="70">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workshop Card 4: Hand-Stitched Leather -->
+          <article class="workshop-card" 
+                   data-discipline="leather" 
+                   data-level="Beginner" 
+                   data-price="95" 
+                   data-duration="4.0"
+                   id="card-leather-goods">
+            <figure class="card-media">
+              <img src="assets/images/leathercraft.svg" 
+                   alt="Handmade vegetable tanned leather card wallet with solid brass hardware" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-leather">Leathercraft</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Hand-Stitched Leather Goods to favorites" 
+                      aria-pressed="false"
+                      data-id="leather-goods">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Beginner Friendly</span>
+                <span class="card-spots"><strong class="spot-num">3</strong> spots left</span>
+              </div>
+
+              <h3 class="card-title">Hand-Stitched Leather Accessories</h3>
+              <p class="card-desc">
+                Craft a bespoke card wallet or passport sleeve from vegetable-tanned Italian leather. Learn pattern cutting, pricking iron stitch spacing, burnishing, and saddle stitching.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 4.0 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">✂</span> Full-grain Tuscan Leather</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Atelier West</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$95</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Hand-Stitched Leather Accessories"
+                        data-workshop-price="95">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workshop Card 5: Molten Glassblowing -->
+          <article class="workshop-card" 
+                   data-discipline="glass" 
+                   data-level="Beginner" 
+                   data-price="125" 
+                   data-duration="3.0"
+                   id="card-molten-glass">
+            <figure class="card-media">
+              <img src="assets/images/glassblowing.svg" 
+                   alt="Gathering glowing molten glass from a studio kiln furnace with a steel blowpipe" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-glass">Glass Studio</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Molten Glass Vessel Basics to favorites" 
+                      aria-pressed="false"
+                      data-id="molten-glass">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Beginner Friendly</span>
+                <span class="card-spots"><strong class="spot-num">1</strong> spot left</span>
+              </div>
+
+              <h3 class="card-title">Molten Glass Vessel Fundamentals</h3>
+              <p class="card-desc">
+                Experience high-heat glass sculpting. Gather 2,000°F molten soda-lime glass from the furnace, add color frit pigments, and blow your own decorative cup or glass paperweight.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 3.0 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">🔥</span> Annealed Custom Glassware</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Riverfront Hot Shop</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$125</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Molten Glass Vessel Fundamentals"
+                        data-workshop-price="125">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Workshop Card 6: Coptic Bookbinding -->
+          <article class="workshop-card" 
+                   data-discipline="pottery" 
+                   data-level="Beginner" 
+                   data-price="65" 
+                   data-duration="3.5"
+                   id="card-coptic-bookbinding">
+            <figure class="card-media">
+              <img src="assets/images/bookbinding.svg" 
+                   alt="Hand-bound coptic stitch journal laying flat with exposed decorative spine" 
+                   class="card-img" 
+                   loading="lazy" 
+                   width="400" 
+                   height="225">
+              <span class="category-badge badge-pottery">Book Arts</span>
+              <button type="button" 
+                      class="btn-bookmark" 
+                      aria-label="Save Coptic Stitch Bookbinding to favorites" 
+                      aria-pressed="false"
+                      data-id="coptic-bookbinding">
+                <span class="bookmark-icon" aria-hidden="true">♡</span>
+              </button>
+            </figure>
+            
+            <div class="card-body">
+              <div class="card-meta-top">
+                <span class="card-level">Beginner Friendly</span>
+                <span class="card-spots"><strong class="spot-num">5</strong> spots left</span>
+              </div>
+
+              <h3 class="card-title">Coptic Stitch Exposed-Spine Binding</h3>
+              <p class="card-desc">
+                Construct an open-flat artist sketch journal using heavy deckled archival paper and bookcloth boards. Bind multi-section folios using curved needles and waxed Irish linen thread.
+              </p>
+
+              <ul class="workshop-details-list" aria-label="Workshop specifications">
+                <li><span class="detail-icon" aria-hidden="true">⏱</span> 3.5 Hours</li>
+                <li><span class="detail-icon" aria-hidden="true">📖</span> 160-Page Archival Sketchbook</li>
+                <li><span class="detail-icon" aria-hidden="true">📍</span> Print Press Studio</li>
+              </ul>
+
+              <div class="card-footer">
+                <div class="card-price">
+                  <span class="price-amount">$65</span>
+                  <span class="price-unit">/ student</span>
+                </div>
+                <button type="button" 
+                        class="btn btn-primary btn-sm btn-open-modal" 
+                        data-workshop-title="Coptic Stitch Exposed-Spine Binding"
+                        data-workshop-price="65">
+                  Reserve Spot
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results Fallback State -->
+        <div id="no-results-msg" class="no-results-card hidden" role="alert">
+          <p class="no-results-title">No matching workshops found</p>
+          <p class="no-results-sub">Try expanding your maximum price filter or choosing a different craft medium.</p>
+          <button type="button" id="btn-reset-filters-secondary" class="btn btn-secondary btn-sm">Reset All Filters</button>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- =========================================================================
+         RESERVATION & INQUIRY FORM LANDMARK (Micro Form Validation)
+         ========================================================================= -->
+    <section class="reservation-section" id="reservation-section" aria-labelledby="res-heading">
+      <div class="reservation-container">
+        <div class="section-header text-center">
+          <span class="section-tag">Instant Studio Reservation</span>
+          <h2 id="res-heading" class="section-title">Reserve Your Workshop Seat</h2>
+          <p class="section-desc">
+            Space in our artisan masterclasses is intentionally capped at 6–8 students to ensure dedicated one-on-one mentorship. Reserve your bench spot below.
+          </p>
+        </div>
+
+        <!-- Accessible, Form-Validated Form -->
+        <form id="main-reservation-form" class="reservation-form" novalidate>
+          <div class="form-grid">
+            
+            <!-- Full Name Field -->
+            <div class="form-field">
+              <label for="res-name" class="form-label">
+                Full Name <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input type="text" 
+                     id="res-name" 
+                     name="fullName" 
+                     class="form-input" 
+                     placeholder="e.g., Anya Sharma" 
+                     required 
+                     aria-describedby="name-error">
+              <span id="name-error" class="form-feedback error-msg" aria-live="polite"></span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-field">
+              <label for="res-email" class="form-label">
+                Email Address <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input type="email" 
+                     id="res-email" 
+                     name="email" 
+                     class="form-input" 
+                     placeholder="e.g., anya@example.com" 
+                     required 
+                     aria-describedby="email-error">
+              <span id="email-error" class="form-feedback error-msg" aria-live="polite"></span>
+            </div>
+
+            <!-- Workshop Selection -->
+            <div class="form-field">
+              <label for="res-workshop" class="form-label">
+                Select Masterclass <span class="required" aria-hidden="true">*</span>
+              </label>
+              <div class="select-wrapper">
+                <select id="res-workshop" name="workshop" class="form-select" required aria-describedby="workshop-error">
+                  <option value="" disabled selected>Choose a studio workshop...</option>
+                  <option value="Ceramic Wheel Throwing Intensive">Ceramic Wheel Throwing Intensive ($85)</option>
+                  <option value="Traditional Japanese Wood Joinery">Traditional Japanese Wood Joinery ($110)</option>
+                  <option value="Botanical Linocut Relief Printing">Botanical Linocut Relief Printing ($70)</option>
+                  <option value="Hand-Stitched Leather Accessories">Hand-Stitched Leather Accessories ($95)</option>
+                  <option value="Molten Glass Vessel Fundamentals">Molten Glass Vessel Fundamentals ($125)</option>
+                  <option value="Coptic Stitch Exposed-Spine Binding">Coptic Stitch Exposed-Spine Binding ($65)</option>
+                </select>
+              </div>
+              <span id="workshop-error" class="form-feedback error-msg" aria-live="polite"></span>
+            </div>
+
+            <!-- Preferred Date Field -->
+            <div class="form-field">
+              <label for="res-date" class="form-label">
+                Preferred Date <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input type="date" 
+                     id="res-date" 
+                     name="reservationDate" 
+                     class="form-input" 
+                     required 
+                     aria-describedby="date-error">
+              <span id="date-error" class="form-feedback error-msg" aria-live="polite"></span>
+            </div>
+
+            <!-- Guest Count -->
+            <div class="form-field">
+              <label for="res-guests" class="form-label">
+                Number of Attendees <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input type="number" 
+                     id="res-guests" 
+                     name="guests" 
+                     class="form-input" 
+                     min="1" 
+                     max="4" 
+                     value="1" 
+                     required 
+                     aria-describedby="guests-error">
+              <span id="guests-error" class="form-feedback error-msg" aria-live="polite"></span>
+            </div>
+
+            <!-- Experience Note Field (Optional) -->
+            <div class="form-field form-field-full">
+              <label for="res-notes" class="form-label">Special Inquiries or Accessibility Requests</label>
+              <textarea id="res-notes" 
+                        name="notes" 
+                        class="form-textarea" 
+                        rows="3" 
+                        placeholder="Tell us about your background or any accessibility accommodations you may require..."></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary btn-lg" id="btn-submit-reservation">
+              Confirm Studio Reservation
+            </button>
+            <p class="form-privacy-note">
+              🔒 Free cancellation up to 48 hours prior to workshop. All craft tools and materials are included in registration.
+            </p>
+          </div>
+
+          <!-- Success Alert Message (Shown via JS upon valid submission) -->
+          <div id="form-success-banner" class="form-alert-success hidden" role="alert">
+            <span class="success-icon" aria-hidden="true">✓</span>
+            <div>
+              <strong class="success-title">Reservation Successfully Confirmed!</strong>
+              <p class="success-desc">A detailed orientation guide, studio directions, and preparation notes have been dispatched to your email.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Community & Instructor Callout Section -->
+    <section class="community-section" id="community-section" aria-labelledby="community-title">
+      <div class="community-card">
+        <div class="community-text">
+          <span class="community-tag">DecodeLabs Maker Guild</span>
+          <h2 id="community-title" class="community-title">Are You a Master Artisan or Studio Craftsman?</h2>
+          <p class="community-desc">
+            We partner with experienced ceramicists, timber carpenters, and print artists to offer mentored studio hours. Teach small cohorts of enthusiastic learners in professional shared spaces.
+          </p>
+          <a href="#reservation-section" class="btn btn-secondary">Apply as Workshop Instructor</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       TERMINAL FOOTER LANDMARK (Metadata, Directory & Compliance)
+       ========================================================================= -->
+  <footer class="site-footer" id="site-footer" role="contentinfo">
+    <div class="footer-container">
+      
+      <div class="footer-col footer-col-brand">
+        <a href="index.html" class="brand-logo footer-logo">
+          <span class="logo-mark" aria-hidden="true">✦</span>
+          <span class="logo-text">Artisan<strong>Craft</strong></span>
+        </a>
+        <p class="footer-tagline">
+          Cultivating analog craft mastery in a digital age. Proudly built for the DecodeLabs Full Stack Development Internship Program.
+        </p>
+        <p class="footer-contact">
+          📍 Greater Lucknow, India<br>
+          📞 +91 89330 06408<br>
+          ✉ decodelabs.tech@gmail.com
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Craft Disciplines</h3>
+        <ul class="footer-links">
+          <li><a href="#catalog-section">Wheel-Thrown Pottery</a></li>
+          <li><a href="#catalog-section">Traditional Japanese Joinery</a></li>
+          <li><a href="#catalog-section">Botanical Linocut Printmaking</a></li>
+          <li><a href="#catalog-section">Custom Leather Crafting</a></li>
+          <li><a href="#catalog-section">Molten Glass Vessel Basics</a></li>
+          <li><a href="#catalog-section">Coptic Stitch Bookbinding</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Studio Locations</h3>
+        <ul class="footer-links">
+          <li><a href="#catalog-section">Downtown Loft Atelier</a></li>
+          <li><a href="#catalog-section">Timber Mill Workshop B</a></li>
+          <li><a href="#catalog-section">Print Press Foundry</a></li>
+          <li><a href="#catalog-section">Riverfront Hot Glass Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-heading">Project Standards</h3>
+        <ul class="footer-links">
+          <li><span class="badge-tech">HTML5 Semantic Bedrock</span></li>
+          <li><span class="badge-tech">CSS Grid &amp; Flexbox</span></li>
+          <li><span class="badge-tech">WCAG 2.1 AA Compliant</span></li>
+          <li><span class="badge-tech">Zero Frameworks (Vanilla)</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>© 2026 DecodeLabs Industrial Training Kit • Project 1: Responsive Frontend Interface.</p>
+        <p class="footer-credentials">Constructed with HTML5, CSS3, &amp; Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       ACCESSIBLE MODAL DIALOG (Interactive Quick Card Reservation)
+       ========================================================================= -->
+  <dialog id="booking-modal" class="booking-modal" aria-labelledby="modal-title" aria-modal="true">
+    <div class="modal-surface">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge">Direct Studio Booking</span>
+          <h2 id="modal-title" class="modal-title">Reserve Workshop</h2>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-modal" aria-label="Close dialog window">✕</button>
+      </div>
+
+      <form id="modal-reservation-form" class="modal-form" novalidate>
+        <div class="modal-workshop-summary">
+          <p class="modal-workshop-name" id="modal-workshop-name">Ceramic Wheel Throwing Intensive</p>
+          <p class="modal-workshop-rate" id="modal-workshop-rate">$85 per seat • Materials included</p>
+        </div>
+
+        <div class="form-field">
+          <label for="modal-name" class="form-label">Full Name <span class="required">*</span></label>
+          <input type="text" id="modal-name" class="form-input" required placeholder="Your full name">
+          <span id="modal-name-error" class="form-feedback error-msg"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="modal-email" class="form-label">Email Address <span class="required">*</span></label>
+          <input type="email" id="modal-email" class="form-input" required placeholder="name@example.com">
+          <span id="modal-email-error" class="form-feedback error-msg"></span>
+        </div>
+
+        <div class="form-field">
+          <label for="modal-date" class="form-label">Select Date <span class="required">*</span></label>
+          <input type="date" id="modal-date" class="form-input" required>
+          <span id="modal-date-error" class="form-feedback error-msg"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- ARIA Live Notification Region for dynamic updates -->
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+
+  <!-- Vanilla JavaScript Logic (Loaded with defer for zero render blocking) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

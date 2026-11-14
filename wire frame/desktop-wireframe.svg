@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1220" width="1280" height="1220" style="background:#F9F9F9; font-family: 'Courier New', monospace, sans-serif;">
+  <defs>
+    <style>
+      .wire-box { fill: #FFFFFF; stroke: #333333; stroke-width: 1.5; }
+      .wire-fill { fill: #EBEBEB; stroke: #333333; stroke-width: 1.5; }
+      .wire-text { fill: #222222; font-family: sans-serif; font-size: 13px; }
+      .wire-title { fill: #111111; font-family: sans-serif; font-size: 16px; font-weight: bold; }
+      .wire-muted { fill: #666666; font-family: sans-serif; font-size: 12px; }
+      .wire-btn { fill: #DDDDDD; stroke: #333333; stroke-width: 1.5; rx: 4; }
+      .wire-img { fill: #E8E8E8; stroke: #888888; stroke-width: 1.5; }
+      .wire-line { stroke: #999999; stroke-width: 1; stroke-dasharray: 4,4; }
+    </style>
+  </defs>
+
+  <!-- Canvas Frame (1280px Desktop Viewport) -->
+  <rect x="10" y="10" width="1260" height="1200" rx="12" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+  <text x="640" y="28" text-anchor="middle" fill="#555555" font-size="11" font-family="sans-serif">1280px Desktop Blueprint (DecodeLabs Macro Grid Architecture)</text>
+
+  <!-- ================= HEADER (Flexbox Micro-Component) ================= -->
+  <rect x="25" y="38" width="1230" height="60" fill="#FAFAFA" stroke="#333333" stroke-width="1.5"/>
+  <text x="50" y="74" class="wire-title" font-size="20">ArtisanCraft [LOGO]</text>
+  
+  <!-- Navigation Links -->
+  <text x="320" y="74" class="wire-text" font-weight="bold">Workshops</text>
+  <text x="430" y="74" class="wire-text">Instructors</text>
+  <text x="540" y="74" class="wire-text">Studio Spaces</text>
+  <text x="660" y="74" class="wire-text">About</text>
+  <text x="735" y="74" class="wire-text">Contact</text>
+
+  <!-- Search Bar in Header -->
+  <rect x="830" y="52" width="230" height="32" rx="4" fill="#FFFFFF" stroke="#666"/>
+  <text x="845" y="72" class="wire-muted">🔍 Quick search...</text>
+
+  <!-- CTA Button -->
+  <rect x="1080" y="52" width="155" height="32" class="wire-btn" fill="#2B2825"/>
+  <text x="1157" y="72" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold">Reserve a Workshop</text>
+
+  <!-- ================= HERO SECTION (360px Height as per PDF slide 5) ================= -->
+  <rect x="25" y="108" width="1230" height="200" fill="#F4F4F4" stroke="#333333" stroke-width="1.5"/>
+  
+  <!-- Hero Left Column -->
+  <text x="55" y="160" class="wire-title" font-size="28">MASTER TANGIBLE CRAFTSMANSHIP</text>
+  <text x="55" y="190" class="wire-muted" font-size="15">Disconnect from screens. Join master artisans in small-group, hands-on studio masterclasses.</text>
+  <text x="55" y="210" class="wire-muted" font-size="13">Pottery Wheel • Traditional Wood Joinery • Botanical Linocut • Leather Crafting</text>
+
+  <rect x="55" y="235" width="170" height="42" class="wire-btn" fill="#333"/>
+  <text x="140" y="261" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="13" font-weight="bold">Explore 24 Masterclasses</text>
+
+  <rect x="240" y="235" width="160" height="42" class="wire-btn"/>
+  <text x="320" y="261" text-anchor="middle" class="wire-title" font-size="13">View Studio Locations</text>
+
+  <!-- Hero Right Feature Illustration Box -->
+  <rect x="870" y="125" width="360" height="165" class="wire-img" rx="6"/>
+  <line x1="870" y1="125" x2="1230" y2="290" stroke="#BBB" stroke-width="2"/>
+  <line x1="1230" y1="125" x2="870" y2="290" stroke="#BBB" stroke-width="2"/>
+  <text x="1050" y="212" text-anchor="middle" fill="#555" font-size="14">[HERO MEDIA: Studio Craft in Action]</text>
+
+  <!-- ================= 2D CSS GRID MACRO LAYOUT ================= -->
+  <!-- SIDEBAR (ASIDE): Width 280px -->
+  <rect x="25" y="320" width="280" height="660" fill="#FAFAFA" stroke="#333333" stroke-width="1.5" rx="4"/>
+  <text x="45" y="352" class="wire-title" font-size="16">Filters &amp; Refinements</text>
+  <line x1="45" y1="365" x2="285" y2="365" stroke="#CCC"/>
+
+  <!-- Filter 1: Discipline -->
+  <text x="45" y="392" class="wire-title" font-size="13">Craft Medium</text>
+  <rect x="45" y="405" width="14" height="14" fill="#333" stroke="#333"/>
+  <text x="68" y="416" class="wire-text">All Disciplines (24)</text>
+
+  <rect x="45" y="430" width="14" height="14" fill="#FFF" stroke="#666"/>
+  <text x="68" y="441" class="wire-text">Ceramics &amp; Pottery (8)</text>
+
+  <rect x="45" y="455" width="14" height="14" fill="#FFF" stroke="#666"/>
+  <text x="68" y="466" class="wire-text">Woodcraft &amp; Joinery (6)</text>
+
+  <rect x="45" y="480" width="14" height="14" fill="#FFF" stroke="#666"/>
+  <text x="68" y="491" class="wire-text">Printmaking &amp; Linocut (5)</text>
+
+  <rect x="45" y="505" width="14" height="14" fill="#FFF" stroke="#666"/>
+  <text x="68" y="516" class="wire-text">Leather Crafting (5)</text>
+
+  <!-- Filter 2: Skill Level -->
+  <text x="45" y="555" class="wire-title" font-size="13">Skill Level</text>
+  <rect x="45" y="570" width="14" height="14" rx="7" fill="#333"/>
+  <text x="68" y="581" class="wire-text">Any Level</text>
+  <rect x="45" y="595" width="14" height="14" rx="7" fill="#FFF" stroke="#666"/>
+  <text x="68" y="606" class="wire-text">Beginner Friendly</text>
+  <rect x="45" y="620" width="14" height="14" rx="7" fill="#FFF" stroke="#666"/>
+  <text x="68" y="631" class="wire-text">Intermediate / Advanced</text>
+
+  <!-- Filter 3: Maximum Price Slider -->
+  <text x="45" y="670" class="wire-title" font-size="13">Price Range</text>
+  <line x1="45" y1="695" x2="270" y2="695" stroke="#444" stroke-width="4"/>
+  <circle cx="160" cy="695" r="7" fill="#333"/>
+  <text x="45" y="720" class="wire-muted">Up to: $120 / class</text>
+
+  <!-- Filter Reset Button -->
+  <rect x="45" y="745" width="240" height="32" class="wire-btn"/>
+  <text x="165" y="765" text-anchor="middle" class="wire-title" font-size="12">Reset All Filters</text>
+
+  <!-- MAIN CONTENT AREA (Grid 3 Columns): Width 935px -->
+  <text x="325" y="348" class="wire-title" font-size="18">Available Studio Workshops</text>
+  <text x="1050" y="348" class="wire-muted">Sort by: Date (Upcoming) ▼</text>
+
+  <!-- Card 1 -->
+  <rect x="325" y="365" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="335" y="375" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="335" y1="375" x2="610" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="610" y1="375" x2="335" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <text x="472" y="442" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Pottery Wheel]</text>
+  <rect x="335" y="508" width="75" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="372" y="521" text-anchor="middle" font-size="9" font-weight="bold">POTTERY</text>
+  <text x="335" y="546" class="wire-title" font-size="13">Ceramic Wheel Intensive</text>
+  <text x="335" y="566" class="wire-muted" font-size="11">⏱ 3.5h • Beginner • Clay included</text>
+  <text x="335" y="590" class="wire-title" font-size="14">$85</text>
+  <text x="540" y="590" class="wire-muted">4 spots</text>
+  <rect x="335" y="605" width="275" height="34" class="wire-btn"/>
+  <text x="472" y="626" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- Card 2 -->
+  <rect x="635" y="365" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="645" y="375" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="645" y1="375" x2="920" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="920" y1="375" x2="645" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <text x="782" y="442" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Japanese Joinery]</text>
+  <rect x="645" y="508" width="85" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="687" y="521" text-anchor="middle" font-size="9" font-weight="bold">WOODCRAFT</text>
+  <text x="645" y="546" class="wire-title" font-size="13">Traditional Joinery Masterclass</text>
+  <text x="645" y="566" class="wire-muted" font-size="11">⏱ 4h • Intermediate • Wood kit</text>
+  <text x="645" y="590" class="wire-title" font-size="14">$110</text>
+  <text x="850" y="590" class="wire-muted">2 spots</text>
+  <rect x="645" y="605" width="275" height="34" class="wire-btn"/>
+  <text x="782" y="626" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- Card 3 -->
+  <rect x="945" y="365" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="955" y="375" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="955" y1="375" x2="1230" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="1230" y1="375" x2="955" y2="500" stroke="#BBB" stroke-width="1.5"/>
+  <text x="1092" y="442" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Botanical Linocut]</text>
+  <rect x="955" y="508" width="85" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="997" y="521" text-anchor="middle" font-size="9" font-weight="bold">PRINTMAKING</text>
+  <text x="955" y="546" class="wire-title" font-size="13">Botanical Linocut Print</text>
+  <text x="955" y="566" class="wire-muted" font-size="11">⏱ 3h • All Levels • 5 Prints</text>
+  <text x="955" y="590" class="wire-title" font-size="14">$70</text>
+  <text x="1160" y="590" class="wire-muted">6 spots</text>
+  <rect x="955" y="605" width="275" height="34" class="wire-btn"/>
+  <text x="1092" y="626" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- Card 4 -->
+  <rect x="325" y="675" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="335" y="685" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="335" y1="685" x2="610" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="610" y1="685" x2="335" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <text x="472" y="752" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Leather Craft]</text>
+  <rect x="335" y="818" width="80" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="375" y="831" text-anchor="middle" font-size="9" font-weight="bold">LEATHER</text>
+  <text x="335" y="856" class="wire-title" font-size="13">Handmade Leather Goods</text>
+  <text x="335" y="876" class="wire-muted" font-size="11">⏱ 4h • Beginner • Italian Leather</text>
+  <text x="335" y="900" class="wire-title" font-size="14">$95</text>
+  <text x="540" y="900" class="wire-muted">3 spots</text>
+  <rect x="335" y="915" width="275" height="34" class="wire-btn"/>
+  <text x="472" y="936" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- Card 5 -->
+  <rect x="635" y="675" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="645" y="685" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="645" y1="685" x2="920" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="920" y1="685" x2="645" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <text x="782" y="752" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Glassblowing]</text>
+  <rect x="645" y="818" width="80" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="685" y="831" text-anchor="middle" font-size="9" font-weight="bold">GLASS</text>
+  <text x="645" y="856" class="wire-title" font-size="13">Molten Glass Vessel Basics</text>
+  <text x="645" y="876" class="wire-muted" font-size="11">⏱ 3h • Beginner • Furnace access</text>
+  <text x="645" y="900" class="wire-title" font-size="14">$125</text>
+  <text x="850" y="900" class="wire-muted">1 spot</text>
+  <rect x="645" y="915" width="275" height="34" class="wire-btn"/>
+  <text x="782" y="936" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- Card 6 -->
+  <rect x="945" y="675" width="295" height="295" class="wire-box" rx="6"/>
+  <rect x="955" y="685" width="275" height="125" class="wire-img" rx="4"/>
+  <line x1="955" y1="685" x2="1230" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <line x1="1230" y1="685" x2="955" y2="810" stroke="#BBB" stroke-width="1.5"/>
+  <text x="1092" y="752" text-anchor="middle" fill="#555" font-size="11">[IMAGE: Bookbinding]</text>
+  <rect x="955" y="818" width="85" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="997" y="831" text-anchor="middle" font-size="9" font-weight="bold">BOOKCRAFT</text>
+  <text x="955" y="856" class="wire-title" font-size="13">Coptic Stitch Bookbinding</text>
+  <text x="955" y="876" class="wire-muted" font-size="11">⏱ 3.5h • All Levels • Archival paper</text>
+  <text x="955" y="900" class="wire-title" font-size="14">$65</text>
+  <text x="1160" y="900" class="wire-muted">5 spots</text>
+  <rect x="955" y="915" width="275" height="34" class="wire-btn"/>
+  <text x="1092" y="936" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- ================= INLINE RESERVATION & INQUIRY FORM (4-COLUMN FLEX ROW) ================= -->
+  <rect x="25" y="995" width="1230" height="100" fill="#F4F4F4" stroke="#333333" stroke-width="1.5" rx="4"/>
+  <text x="45" y="1022" class="wire-title" font-size="14">Reserve a Studio Workshop / Direct Inquiry</text>
+  
+  <text x="45" y="1045" class="wire-text" font-size="11">Full Name *</text>
+  <rect x="45" y="1052" width="260" height="30" fill="#FFF" stroke="#666" rx="3"/>
+
+  <text x="325" y="1045" class="wire-text" font-size="11">Email Address *</text>
+  <rect x="325" y="1052" width="260" height="30" fill="#FFF" stroke="#666" rx="3"/>
+
+  <text x="605" y="1045" class="wire-text" font-size="11">Workshop &amp; Seats *</text>
+  <rect x="605" y="1052" width="310" height="30" fill="#FFF" stroke="#666" rx="3"/>
+  <text x="615" y="1071" class="wire-muted">Ceramic Wheel Intensive (1 Seat) ▼</text>
+
+  <rect x="935" y="1052" width="300" height="30" class="wire-btn" fill="#2B2825"/>
+  <text x="1085" y="1071" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="12">Submit Instant Reservation</text>
+
+  <!-- ================= FOOTER ================= -->
+  <rect x="25" y="1110" width="1230" height="85" fill="#2B2825" stroke="#111" stroke-width="1"/>
+  <text x="50" y="1145" fill="#FFF" class="wire-title" font-size="16">ArtisanCraft Studio Hub</text>
+  <text x="50" y="1165" fill="#AAA" class="wire-muted">Cultivating analog craft mastery in a digital age. Proudly crafted for DecodeLabs 2026.</text>
+
+  <text x="580" y="1145" fill="#FFF" class="wire-title" font-size="12">Craft Disciplines</text>
+  <text x="580" y="1165" fill="#AAA" font-size="11">Pottery • Woodcraft • Linocut • Leather</text>
+
+  <text x="880" y="1145" fill="#FFF" class="wire-title" font-size="12">Compliance</text>
+  <text x="880" y="1165" fill="#AAA" font-size="11">HTML5 Semantics • CSS Grid • WCAG 2.1 AA</text>
+
+  <text x="1100" y="1155" fill="#888" font-size="11">© 2026 DecodeLabs</text>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1520" width="420" height="1520" style="background:#F9F9F9; font-family: 'Courier New', monospace, sans-serif;">
+  <defs>
+    <style>
+      .wire-box { fill: #FFFFFF; stroke: #333333; stroke-width: 2; }
+      .wire-fill { fill: #EBEBEB; stroke: #333333; stroke-width: 1.5; }
+      .wire-text { fill: #222222; font-family: sans-serif; font-size: 12px; }
+      .wire-title { fill: #111111; font-family: sans-serif; font-size: 15px; font-weight: bold; }
+      .wire-muted { fill: #777777; font-family: sans-serif; font-size: 11px; }
+      .wire-btn { fill: #DDDDDD; stroke: #333333; stroke-width: 1.5; rx: 4; }
+      .wire-img { fill: #E5E5E5; stroke: #888888; stroke-width: 1.5; }
+      .wire-line { stroke: #AAAAAA; stroke-width: 1; stroke-dasharray: 2,2; }
+    </style>
+  </defs>
+
+  <!-- Device Frame (Mobile 390px viewport + margin) -->
+  <rect x="15" y="15" width="390" height="1490" rx="24" fill="#FFFFFF" stroke="#222222" stroke-width="3"/>
+  <rect x="140" y="25" width="140" height="18" rx="9" fill="#222222"/>
+  <text x="210" y="38" text-anchor="middle" fill="#FFFFFF" font-size="10" font-family="sans-serif">390px Viewport (Mobile)</text>
+
+  <!-- ================= HEADER / NAV ================= -->
+  <rect x="25" y="55" width="370" height="55" fill="#FAFAFA" stroke="#333333" stroke-width="1.5"/>
+  <text x="40" y="87" class="wire-title">ArtisanCraft [LOGO]</text>
+  <!-- Hamburger Button -->
+  <rect x="345" y="67" width="35" height="30" class="wire-btn"/>
+  <line x1="352" y1="74" x2="373" y2="74" stroke="#222222" stroke-width="2"/>
+  <line x1="352" y1="82" x2="373" y2="82" stroke="#222222" stroke-width="2"/>
+  <line x1="352" y1="90" x2="373" y2="90" stroke="#222222" stroke-width="2"/>
+
+  <!-- ================= HERO SECTION ================= -->
+  <rect x="25" y="120" width="370" height="190" fill="#F4F4F4" stroke="#333333" stroke-width="1.5"/>
+  <text x="210" y="150" text-anchor="middle" class="wire-title" font-size="16">HANDS-ON ARTISAN WORKSHOPS</text>
+  <text x="210" y="172" text-anchor="middle" class="wire-muted">Step away from screens. Master tangible crafts.</text>
+
+  <!-- Search Input -->
+  <rect x="45" y="195" width="330" height="38" rx="4" fill="#FFFFFF" stroke="#555555" stroke-width="1.5"/>
+  <text x="60" y="219" class="wire-muted">🔍 Search workshops, pottery, wood...</text>
+
+  <!-- Quick Category Pills (Horizontal Scroll) -->
+  <rect x="45" y="245" width="60" height="24" rx="12" fill="#E0E0E0" stroke="#444"/>
+  <text x="75" y="261" text-anchor="middle" font-size="10" class="wire-text">All (12)</text>
+
+  <rect x="112" y="245" width="70" height="24" rx="12" fill="#FFFFFF" stroke="#888"/>
+  <text x="147" y="261" text-anchor="middle" font-size="10" class="wire-text">Ceramics</text>
+
+  <rect x="189" y="245" width="75" height="24" rx="12" fill="#FFFFFF" stroke="#888"/>
+  <text x="226" y="261" text-anchor="middle" font-size="10" class="wire-text">Woodcraft</text>
+
+  <rect x="271" y="245" width="75" height="24" rx="12" fill="#FFFFFF" stroke="#888"/>
+  <text x="308" y="261" text-anchor="middle" font-size="10" class="wire-text">Printmaking</text>
+
+  <!-- ================= FILTER COLLAPSIBLE BAR ================= -->
+  <rect x="25" y="322" width="370" height="42" fill="#EEEEEE" stroke="#333333" stroke-width="1"/>
+  <text x="40" y="348" class="wire-title" font-size="13">⚙ Filter & Refine Options</text>
+  <text x="365" y="348" font-size="14" class="wire-text">▼</text>
+
+  <!-- Catalog Heading -->
+  <text x="30" y="385" class="wire-title" font-size="14">Featured Workshops (Showing 6)</text>
+
+  <!-- ================= CARD 1 ================= -->
+  <rect x="25" y="398" width="370" height="270" class="wire-box" rx="6"/>
+  <!-- Image placeholder with X -->
+  <rect x="35" y="408" width="350" height="120" class="wire-img" rx="4"/>
+  <line x1="35" y1="408" x2="385" y2="528" stroke="#BBBBBB" stroke-width="1.5"/>
+  <line x1="385" y1="408" x2="35" y2="528" stroke="#BBBBBB" stroke-width="1.5"/>
+  <text x="210" y="473" text-anchor="middle" fill="#555" font-size="12">[IMAGE: Ceramic Wheel Throwing]</text>
+  
+  <!-- Badge & Title -->
+  <rect x="35" y="538" width="75" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="72" y="551" text-anchor="middle" font-size="9" font-weight="bold">POTTERY</text>
+  <text x="35" y="575" class="wire-title" font-size="14">Ceramic Wheel Throwing Intensive</text>
+  <text x="35" y="594" class="wire-muted">⏱ 3.5 Hours • Beginner Friendly • Clay provided</text>
+  <text x="35" y="614" class="wire-title" font-size="13">$85 / person</text>
+  <text x="340" y="614" class="wire-muted">4 spots left</text>
+  
+  <rect x="35" y="626" width="350" height="32" class="wire-btn"/>
+  <text x="210" y="647" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- ================= CARD 2 ================= -->
+  <rect x="25" y="680" width="370" height="270" class="wire-box" rx="6"/>
+  <rect x="35" y="690" width="350" height="120" class="wire-img" rx="4"/>
+  <line x1="35" y1="690" x2="385" y2="810" stroke="#BBBBBB" stroke-width="1.5"/>
+  <line x1="385" y1="690" x2="35" y2="810" stroke="#BBBBBB" stroke-width="1.5"/>
+  <text x="210" y="755" text-anchor="middle" fill="#555" font-size="12">[IMAGE: Japanese Wood Joinery]</text>
+
+  <rect x="35" y="820" width="85" height="18" rx="4" fill="#E0E0E0"/>
+  <text x="77" y="833" text-anchor="middle" font-size="9" font-weight="bold">WOODCRAFT</text>
+  <text x="35" y="857" class="wire-title" font-size="14">Traditional Japanese Joinery</text>
+  <text x="35" y="876" class="wire-muted">⏱ 4 Hours • Intermediate • Hardwood kit</text>
+  <text x="35" y="896" class="wire-title" font-size="13">$110 / person</text>
+  <text x="340" y="896" class="wire-muted">2 spots left</text>
+
+  <rect x="35" y="908" width="350" height="32" class="wire-btn"/>
+  <text x="210" y="929" text-anchor="middle" class="wire-title" font-size="12">Reserve Spot</text>
+
+  <!-- ================= INLINE RESERVATION / INQUIRY FORM ================= -->
+  <rect x="25" y="965" width="370" height="290" fill="#F4F4F4" stroke="#333333" stroke-width="1.5" rx="6"/>
+  <text x="40" y="995" class="wire-title" font-size="14">Quick Reservation / Studio Inquiry</text>
+  <text x="40" y="1015" class="wire-muted">Reserve your seat or ask instructor about custom dates.</text>
+
+  <text x="40" y="1040" class="wire-text" font-size="11">Full Name *</text>
+  <rect x="40" y="1047" width="340" height="28" fill="#FFF" stroke="#666" rx="3"/>
+
+  <text x="40" y="1092" class="wire-text" font-size="11">Email Address *</text>
+  <rect x="40" y="1099" width="340" height="28" fill="#FFF" stroke="#666" rx="3"/>
+
+  <text x="40" y="1144" class="wire-text" font-size="11">Select Workshop & Attendees</text>
+  <rect x="40" y="1151" width="340" height="28" fill="#FFF" stroke="#666" rx="3"/>
+  <text x="50" y="1169" class="wire-muted">Ceramic Wheel Throwing (1 Guest) ▼</text>
+
+  <rect x="40" y="1195" width="340" height="36" class="wire-btn" fill="#333"/>
+  <text x="210" y="1218" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-weight="bold" font-size="12">Submit Reservation</text>
+
+  <!-- ================= FOOTER ================= -->
+  <rect x="25" y="1270" width="370" height="220" fill="#2B2825" stroke="#111" stroke-width="1"/>
+  <text x="40" y="1305" fill="#FFF" class="wire-title">ArtisanCraft Studio</text>
+  <text x="40" y="1325" fill="#AAA" class="wire-muted">Cultivating analog craft mastery in a digital age.</text>
+  
+  <text x="40" y="1360" fill="#DDD" font-size="11" font-weight="bold">Explore Links</text>
+  <text x="40" y="1380" fill="#AAA" font-size="10">• Ceramics &amp; Pottery</text>
+  <text x="40" y="1398" fill="#AAA" font-size="10">• Wood Joinery</text>
+  <text x="40" y="1416" fill="#AAA" font-size="10">• Printmaking &amp; Linocut</text>
+  
+  <line x1="40" y1="1435" x2="380" y2="1435" stroke="#555"/>
+  <text x="210" y="1460" text-anchor="middle" fill="#888" font-size="10">© 2026 DecodeLabs Full Stack Program. All rights reserved.</text>
+</svg>
